@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 5px;
+}
+
+input, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.sidebar {
+    width: 200px;
+    background: #333;
+    color: white;
+    height: 100vh;
+    float: left;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Estilo general para el formulario de pedidos */
+form#formPedido {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Títulos y etiquetas */
+form#formPedido h2,
+form#formPedido label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Selector del canal */
+form#formPedido select[name="canal"] {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Tabla de productos */
+form#formPedido table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+form#formPedido table th,
+form#formPedido table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+form#formPedido table th {
+    background-color: #f5f5f5;
+}
+
+/* Campos de entrada */
+form#formPedido input[type="number"] {
+    width: 60px;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Botón de envío */
+form#formPedido button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+form#formPedido button[type="submit"]:hover {
+    background-color: #157347;
+}
+/* Estilo general para todas las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #343a40;
+    color: #fff;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botones y enlaces dentro de tablas */
+table a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+table a:hover {
+    color: #084298;
+}
+
+/* Dashboard (main-content) encabezados */
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Sidebar mejora visual */
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+    padding-left: 10px;
+    transition: all 0.2s;
+}
+/* Estilo mejorado para la pantalla de login */
+.login-container {
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 22px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #198754;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #157347;
+}
+.login-error {
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+}
+
+.badge-success {
+    background-color: #28a745;
+}
+
+.badge-danger {
+    background-color: #dc3545;
+}
+
+.badge-primary {
+    background-color: #007bff;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-contenido {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.modal-cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+}
+
+.modal-cerrar:hover {
+    color: #000;
+}
+
+#detalle-impresion table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* fuerza a que las columnas no se expandan */
+    word-wrap: break-word;
+}
+
+#detalle-impresion th, #detalle-impresion td {
+    padding: 8px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#detalle-impresion {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+#detalle-impresion table {
+    table-layout: fixed;
+    word-break: break-word;
+    white-space: nowrap;
+    overflow-x: auto;
+    font-size: 13px;
+}
+button.reiniciar {
+    background-color: #ffc107;
+    color: #212529;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.reiniciar:hover {
+    background-color: #e0a800;
+}
+
+
